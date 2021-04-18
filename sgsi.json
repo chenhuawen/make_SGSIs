@@ -1,7 +1,7 @@
 {
-  "rom_url": "https://bigota.d.miui.com/V12.0.7.0.QJEEUXM/miui_CANNONGEEAGlobal_V12.0.7.0.QJEEUXM_139263f88c_10.0.zip",
-  "rom_name": "miui_CANNONGEEAGlobal_V12.0.7.0.QJEEUXM_139263f88c_10.0",
-  "pack_sgsi": "1.7z",
+  "rom_url": "https://media-sxjz-person.sxoss.xstore.ctyun.cn/PERSONCLOUD/f944d044-d9ad-44fd-9d94-2fbe6c3fa7a2.zip?response-content-disposition=attachment%3Bfilename%3D%22Note9-5G-12.0.9_a1701dc2c.zip%22&x-amz-CLIENTNETWORK=UNKNOWN&x-amz-CLOUDTYPEIN=PERSON&x-amz-limit=rate%3D10240%2Cconcurrency%3D10&x-amz-CLIENTTYPEIN=UNKNOWN&Signature=8UYA0RuLyESAgK1%2B1w%2B7la48JbQ%3D&AWSAccessKeyId=B12spNbFIkHcJjk5MvKN&Expires=1618772725&x-amz-FSIZE=1741316976&x-amz-UID=523236907&x-amz-UFID=11536113535090663&x-amz-APPID=828221",
+  "rom_name": "Note9-5G-12.0.9_a1701dc2c.zip",
+  "pack_sgsi": "Note9-5G-12.0.9_a1701dc2c.7z",
   "make_miui": true,
   "make_flyme": false,
   "make_coloros": false,
