@@ -53,8 +53,8 @@ jobs:
          run: |
            sudo tar -xf SGSI-build-tool.tar
            sudo rm -rf SGSI-build-tool/10/setup.sh
-           sudo mv bin/setup.sh SGSI-build-tool/10/
-           cd SGSI-build-tool/10
+           sudo mv bin/setup.sh SGSI-build-tool/11/
+           cd SGSI-build-tool/11
            sudo bash setup.sh
            
        - name: Download Rom
@@ -63,67 +63,67 @@ jobs:
        - name: Build Super SGSI
          if: steps.var.outputs.make_super == 'true'
          run: |
-           sed -i 's/SGSI.sh/dynamic_SGSI.sh/g' SGSI-build-tool/10/make.sh
+           sed -i 's/SGSI.sh/dynamic_SGSI.sh/g' SGSI-build-tool/11/make.sh
        
        - name: Make MIUI SGSI
          if: steps.var.outputs.make_miui == 'true'
          run: |
-           sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
-           mv fix/MIUI.sh SGSI-build-tool/10/fixbug/fixbug.sh
+           sudo rm -rf SGSI-build-tool/11/fixbug/fixbug.sh
+           mv fix/MIUI.sh SGSI-build-tool/11/fixbug/fixbug.sh
            
        - name: Make Flyme SGSI
          if: steps.var.outputs.make_flyme == 'true'
          run: |
-           sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
-           mv fix/Flyme.sh SGSI-build-tool/10/fixbug/fixbug.sh
+           sudo rm -rf SGSI-build-tool/11/fixbug/fixbug.sh
+           mv fix/Flyme.sh SGSI-build-tool/11/fixbug/fixbug.sh
            
        - name: Make ColorOS SGSI
          if: steps.var.outputs.make_coloros == 'true'
          run: |
-           sudo python3 SGSI-build-tool/10/oppo_ozip/ozipdecrypt.py SGSI-build-tool/10/tmp/${{ steps.var.outputs.rom_name }}
-           sudo rm -rf SGSI-build-tool/10/tmp/${{ steps.var.outputs.rom_name }} SGSI-build-tool/10/fixbug/fixbug.sh
-           mv fix/ColorOS.sh SGSI-build-tool/10/fixbug/fixbug.sh
+           sudo python3 SGSI-build-tool/11/oppo_ozip/ozipdecrypt.py SGSI-build-tool/11/tmp/${{ steps.var.outputs.rom_name }}
+           sudo rm -rf SGSI-build-tool/11/tmp/${{ steps.var.outputs.rom_name }} SGSI-build-tool/11/fixbug/fixbug.sh
+           mv fix/ColorOS.sh SGSI-build-tool/11/fixbug/fixbug.sh
            
        - name: Make H2OS SGSI
          if: steps.var.outputs.make_h2os == 'true'
          run: |
-           sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
-           mv fix/H2OS.sh SGSI-build-tool/10/fixbug/fixbug.sh
+           sudo rm -rf SGSI-build-tool/11/fixbug/fixbug.sh
+           mv fix/H2OS.sh SGSI-build-tool/11/fixbug/fixbug.sh
            
        - name: Make SmartisanOS SGSI
          if: steps.var.outputs.make_smartisanos == 'true'
          run: |
-           sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
-           mv fix/SmartisanOS.sh SGSI-build-tool/10/fixbug/fixbug.sh
+           sudo rm -rf SGSI-build-tool/11/fixbug/fixbug.sh
+           mv fix/SmartisanOS.sh SGSI-build-tool/11/fixbug/fixbug.sh
            
        - name: Make ZUI SGSI
          if: steps.var.outputs.make_zui == 'true'
          run: |
-           sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
-           mv fix/ZUI.sh SGSI-build-tool/10/fixbug/fixbug.sh
+           sudo rm -rf SGSI-build-tool/11/fixbug/fixbug.sh
+           mv fix/ZUI.sh SGSI-build-tool/11/fixbug/fixbug.sh
             
        - name: Generate SGSI
          run: |
-           rm -rf SGSI-build-tool/10/SGSI.sh SGSI-build-tool/10/makeimg.sh SGSI-build-tool/10/bin/mke2fs SGSI-build-tool/10/bin/e2fsdroid SGSI-build-tool/10/dynamic_SGSI.sh SGSI-build-tool/10/oppo.sh SGSI-build-tool/10/make.sh
-           mv make/makeimg.sh make/SGSI.sh make/dynamic_SGSI.sh make/oppo.sh make/make.sh SGSI-build-tool/10/
-           mv bin/mke2fs bin/e2fsdroid SGSI-build-tool/10/bin/
-           cd SGSI-build-tool/10
+           rm -rf SGSI-build-tool/11/SGSI.sh SGSI-build-tool/11/makeimg.sh SGSI-build-tool/11/bin/mke2fs SGSI-build-tool/11/bin/e2fsdroid SGSI-build-tool/11/dynamic_SGSI.sh SGSI-build-tool/11/oppo.sh SGSI-build-tool/11/make.sh
+           mv make/makeimg.sh make/SGSI.sh make/dynamic_SGSI.sh make/oppo.sh make/make.sh SGSI-build-tool/11/
+           mv bin/mke2fs bin/e2fsdroid SGSI-build-tool/11/bin/
+           cd SGSI-build-tool/11
            sudo bash make.sh
 
        - name: Make Patch Module
          run: |
-           zip -r Patchmod.zip SGSI-build-tool/10/out/vendor/app/* SGSI-build-tool/10/out/vendor/bin/* SGSI-build-tool/10/out/vendor/etc/* SGSI-build-tool/10/out/vendor/lib/* SGSI-build-tool/10/out/vendor/lib64/* SGSI-build-tool/10/out/vendor/overlay/*
-           sudo mv Patchmod.zip SGSI-build-tool/10/SGSI/
+           zip -r Patchmod.zip SGSI-build-tool/11/out/vendor/app/* SGSI-build-tool/11/out/vendor/bin/* SGSI-build-tool/11/out/vendor/etc/* SGSI-build-tool/11/out/vendor/lib/* SGSI-build-tool/11/out/vendor/lib64/* SGSI-build-tool/11/out/vendor/overlay/*
+           sudo mv Patchmod.zip SGSI-build-tool/11/SGSI/
            
        - name: Zip Patch  
          run: |
            zip -r Patch1.zip Patch/Patch1/*
            zip -r Patch2.zip Patch/Patch2/*
            zip -r Patch3.zip Patch/Patch3/*
-           sudo mv Patch1.zip Patch2.zip Patch3.zip SGSI-build-tool/10/SGSI/
+           sudo mv Patch1.zip Patch2.zip Patch3.zip SGSI-build-tool/11/SGSI/
 
        - name: 7z SGSI
-         run: 7za a -t7z -r ${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/10/SGSI/*
+         run: 7za a -t7z -r ${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/11/SGSI/*
 
        - name: Upload SGSI to WeTransfer
          if: steps.var.outputs.upload_transfer == 'true'
