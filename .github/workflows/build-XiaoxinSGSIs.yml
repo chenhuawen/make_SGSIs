@@ -54,8 +54,6 @@ jobs:
            sudo tar -xf SGSI-build-tool.tar
            sudo rm -rf SGSI-build-tool/10/setup.sh
            sudo mv bin/setup.sh SGSI-build-tool/10/
-           cd SGSI-build-tool/10
-           sudo bash setup.sh
            
        - name: Download Rom
          run: sudo wget -c ${{ steps.var.outputs.rom_url }} -O SGSI-build-tool/10/tmp/${{ steps.var.outputs.rom_name }}
