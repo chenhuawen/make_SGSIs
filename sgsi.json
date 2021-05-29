@@ -1,14 +1,14 @@
 {
-  "rom_url": "https://coloroswebsitefs.coloros.com/coloroswebsite-coloros-com/grs_20210319142740/PCHM10_11_OTA_1760_all_jtUCSkUpYgoK.ozip",
-  "rom_name": "PCHM10_11_OTA_1760_all_jtUCSkUpYgoK.ozip.zip",
-  "pack_sgsi": "SGSIs_color10.zip",
-  "make_miui": false,
+  "rom_url": "https://bigota.d.miui.com/21.4.21/miui_VIOLET_21.4.21_ddb47e165d_10.0.zip",
+  "rom_name": "miui_VIOLET_21.4.21_ddb47e165d_10.0.zip",
+  "pack_sgsi": "miui_Note 7 Pro_Bugme7.7z",
+  "make_miui": true,
   "make_flyme": false,
-  "make_coloros": true,
+  "make_coloros": false,
   "make_h2os": false,
   "make_smartisanos": false,
   "make_zui": false,
   "make_super": false,
   "upload_transfer": true,
-  "upload_artifact": false
+  "upload_artifact": true
 }
