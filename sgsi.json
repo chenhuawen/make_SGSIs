@@ -1,7 +1,7 @@
 {
-  "rom_url": "https://bigota.d.miui.com/21.4.21/miui_VIOLET_21.4.21_ddb47e165d_10.0.zip",
-  "rom_name": "miui_VIOLET_21.4.21_ddb47e165d_10.0.zip",
-  "pack_sgsi": "miui_Note 7 Pro_Bugme7.7z",
+  "rom_url": "https://bigota.d.miui.com/21.4.21/miui_LAURUS_21.4.21_25f88a5ec1_10.0.zip",
+  "rom_name": "update.zip",
+  "pack_sgsi": "miui.7z",
   "make_miui": true,
   "make_flyme": false,
   "make_coloros": false,
@@ -10,5 +10,5 @@
   "make_zui": false,
   "make_super": false,
   "upload_transfer": true,
-  "upload_artifact": true
+  "upload_artifact": false
 }
