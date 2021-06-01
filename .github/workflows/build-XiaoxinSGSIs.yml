@@ -120,6 +120,7 @@ jobs:
            zip -r Patch2.zip Patch/Patch2/*
            zip -r Patch3.zip Patch/Patch3/*
            sudo mv Patch1.zip Patch2.zip Patch3.zip SGSI-build-tool/10/SGSI/
+           
        - name: 7z SGSI
          run: 7za a -t7z -r ${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/10/SGSI/*
 
