@@ -109,7 +109,6 @@ jobs:
            mv bin/mke2fs bin/e2fsdroid SGSI-build-tool/10/bin/
            cd SGSI-build-tool/10
            sudo bash make.sh
-           
        - name: Make Patch Module
          run: |
            zip -r Patchmod.zip SGSI-build-tool/10/out/vendor/app/* SGSI-build-tool/10/out/vendor/bin/* SGSI-build-tool/10/out/vendor/etc/* SGSI-build-tool/10/out/vendor/lib/* SGSI-build-tool/10/out/vendor/lib64/* SGSI-build-tool/10/out/vendor/overlay/*
@@ -121,7 +120,6 @@ jobs:
            zip -r Patch2.zip Patch/Patch2/*
            zip -r Patch3.zip Patch/Patch3/*
            sudo mv Patch1.zip Patch2.zip Patch3.zip SGSI-build-tool/10/SGSI/
-           
        - name: 7z SGSI
          run: 7za a -t7z -r ${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/10/SGSI/*
 
