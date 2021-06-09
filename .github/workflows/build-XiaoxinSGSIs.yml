@@ -51,7 +51,7 @@ jobs:
            
        - name: Initialization environment
          run: |
-           sudo tar –xvf SGSI-build-tool.tar
+           sudo tar –xf SGSI-build-tool.tar
            cd SGSI-build-tool/10
            sudo bash setup.sh
            
