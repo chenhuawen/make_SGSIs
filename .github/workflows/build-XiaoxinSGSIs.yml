@@ -20,9 +20,9 @@ jobs:
        - name: Clean Up
          run: |
            docker rmi `docker images -q`
-           sudo -E apt-get -y purge azure-cli ghc* tar* m4* curl* android-tools-adb* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk-8-jdk* mysql* php*
+           sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
+           sudo -E apt-get -y purge azure-cli ghc* tar* m4* curl* android-tools-adb* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk-8-jdk* mysql* php* apktool*
            sudo -E apt-get update
-           sudo -E apt-get -y purge azure-cli apktool
            sudo -E apt-get -y autoremove --purge
            sudo -E apt-get clean 
        
