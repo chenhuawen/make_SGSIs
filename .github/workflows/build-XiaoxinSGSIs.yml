@@ -21,7 +21,7 @@ jobs:
          run: |
            docker rmi `docker images -q`
            sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
-           sudo -E apt-get -y purge azure-cli ghc* m4* curl* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php*
+           sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php*
            sudo -E apt-get update
            sudo -E apt-get -y autoremove --purge
            sudo -E apt-get clean 
@@ -46,12 +46,14 @@ jobs:
          uses: robinraju/release-downloader@v1
          with:
            repository: "xiaoxindada/SGSI-build-tool"
-           latest: v2.2
+           tag: "v1.8"
            fileName: "SGSI-build-tool.tar"
            
        - name: Initialization environment
          run: |
            sudo tar -xf SGSI-build-tool.tar
+           sudo rm -rf SGSI-build-tool/10/setup.sh
+           sudo mv bin/setup.sh SGSI-build-tool/10/
            cd SGSI-build-tool/10
            sudo bash setup.sh
            
