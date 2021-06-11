@@ -121,15 +121,13 @@ jobs:
            zip -r Patch3.zip Patch/Patch3/*
            sudo mv Patch1.zip Patch2.zip Patch3.zip SGSI-build-tool/10/SGSI/
        - name: 7z SGSI
-         run:  |
-            mkdir final
-            7za a -t7z -r final${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/10/SGSI/*
+         run: 7za a -t7z -r ${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/10/SGSI/*
 
        - name: Upload SGSI to WeTransfer
          if: steps.var.outputs.upload_transfer == 'true'
          run: |
            curl -sL https://git.io/file-transfer | sh
-           ./transfer wet ./final/ ${{ steps.var.outputs.pack_sgsi }}
+           ./transfer wet ${{ steps.var.outputs.pack_sgsi }}
           
        - name: Upload SGSI to Artifact
          if: steps.var.outputs.upload_artifact == 'true'
