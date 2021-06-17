@@ -110,11 +110,6 @@ jobs:
            cd SGSI-build-tool/10
            sudo bash make.sh
            
-       - name: Make Patch Module
-         run: |
-           zip -r Patchmod.zip SGSI-build-tool/10/out/vendor/app/* SGSI-build-tool/10/out/vendor/bin/* SGSI-build-tool/10/out/vendor/etc/* SGSI-build-tool/10/out/vendor/lib/* SGSI-build-tool/10/out/vendor/lib64/* SGSI-build-tool/10/out/vendor/overlay/*
-           sudo mv Patchmod.zip SGSI-build-tool/10/SGSI/
-           
        - name: Zip Patch  
          run: |
            zip -r Patch1.zip Patch/Patch1/*
