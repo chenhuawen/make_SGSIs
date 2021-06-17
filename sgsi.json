@@ -1,9 +1,9 @@
 {
-  "rom_url": "https://coloroswebsitefs.coloros.com/coloroswebsite-coloros-com/grs_20210514101850/PCHM10_11_OTA_1770_all_mEn3qE24Oezm.ozip",
-  "rom_name": "PCHM10_11_OTA_1770_all_mEn3qE24Oezm.ozip",
-  "pack_sgsi": "colorOS.7z",
+  "rom_url": "https://download.meizu.com/Firware/Flyme/16T/9.21.6.11/cn_daily/20210611003522/9dd28e6e/update.zip",
+  "rom_name": "update.zip",
+  "pack_sgsi": "SGSI.7z",
   "make_miui": false,
-  "make_flyme": false,
+  "make_flyme": true,
   "make_coloros": true,
   "make_h2os": false,
   "make_smartisanos": false,
