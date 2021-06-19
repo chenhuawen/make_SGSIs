@@ -1,9 +1,9 @@
 {
-  "rom_url": "https://download.meizu.com/Firmware/Flyme/16T/9.21.6.11/cn_daily/20210611003522/9dd28e6e/update.zip",
-  "rom_name": "update.zip",
-  "pack_sgsi": "SGSI.7z",
+  "rom_url": "https://down.ws59.cn/15ydinc/5/p9/5p9f15ydinc?cdn_sign=1624068553-31-0-915a28e1a9d028b2b90cbd864ab229e0&exp=9600&response-content-disposition=attachment%3B%20filename%3D%22RMX1991_11_OTA_1270_all_0TysfnWoknoq.ozip.zip%22%3B%20filename%2A%3Dutf-8%27%27RMX1991_11_OTA_1270_all_0TysfnWoknoq.ozip.zip",
+  "rom_name": "RMX1991_11_OTA_1270_all_0TysfnWoknoq.ozip.zip",
+  "pack_sgsi": "OPPO_SGSI.7z",
   "make_miui": false,
-  "make_flyme": true,
+  "make_flyme": false,
   "make_coloros": true,
   "make_h2os": false,
   "make_smartisanos": false,
