@@ -1,7 +1,7 @@
 {
-  "rom_url": "https://download.c.realme.com/osupdate/RMX1851_11_OTA_1130_all_iuygSyEV1LmI.ozip",
-  "rom_name": "RMX1851_11_OTA_1130_all_iuygSyEV1LmI.ozip",
-  "pack_sgsi": "OPPO_SGSI.7z",
+  "rom_url": "https://ota-manual-cn.allawnfs.com/ota/21/06/17/f1dfd7e6-4ead-41ee-b867-9e3fc35379d0.ozip",
+  "rom_name": "f1dfd7e6-4ead-41ee-b867-9e3fc35379d0.ozip",
+  "pack_sgsi": "realme_SGSI.7z",
   "make_miui": false,
   "make_flyme": false,
   "make_coloros": true,
@@ -9,6 +9,6 @@
   "make_smartisanos": false,
   "make_zui": false,
   "make_super": false,
-  "upload_transfer": true,
-  "upload_artifact": false
+  "upload_transfer": false,
+  "upload_artifact": true
 }
