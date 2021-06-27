@@ -1,6 +1,6 @@
 {
-  "rom_url": "https://bigota.d.miui.com/21.4.21/miui_LAURUS_21.4.21_25f88a5ec1_10.0.zip",
-  "rom_name": "miui_LAURUS_21.4.21_25f88a5ec1_10.0.zip",
+  "rom_url": "https://cdn-test-ota.blackshark.com/DLT-A0/20210507105110-darklighter-ota-signed_by_xiaomi_2bcb1105a058e6a258859cbf64cb86a1.zip",
+  "rom_name": "20210507105110-darklighter-ota-signed_by_xiaomi_2bcb1105a058e6a258859cbf64cb86a1.zip",
   "pack_sgsi": "MIUI_SGSI.7z",
   "make_miui": true,
   "make_flyme": false,
