@@ -1,7 +1,7 @@
 {
   "rom_url": "https://cdn-test-ota.blackshark.com/DLT-A0/20210507105110-darklighter-ota-signed_by_xiaomi_2bcb1105a058e6a258859cbf64cb86a1.zip",
   "rom_name": "20210507105110-darklighter-ota-signed_by_xiaomi_2bcb1105a058e6a258859cbf64cb86a1.zip",
-  "pack_sgsi": "MIUI_SGSI.7z",
+  "pack_sgsi": "miui_SGSI.7z",
   "make_miui": true,
   "make_flyme": false,
   "make_coloros": false,
