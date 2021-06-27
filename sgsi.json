@@ -1,7 +1,7 @@
 {
   "rom_url": "https://bigota.d.miui.com/21.4.21/miui_LAURUS_21.4.21_25f88a5ec1_10.0.zip",
   "rom_name": "miui_LAURUS_21.4.21_25f88a5ec1_10.0.zip",
-  "pack_sgsi": "realme_SGSI.7z",
+  "pack_sgsi": "MIUI_SGSI.7z",
   "make_miui": true,
   "make_flyme": false,
   "make_coloros": false,
