@@ -4,11 +4,17 @@ echo "
 --------------------
 支持的ROM:
 MIUI
+
 JOYUI
+
 Flyme
+
 H2OS
+
 Color
+
 smartisan
+
 ZUI
 --------------------
 "
