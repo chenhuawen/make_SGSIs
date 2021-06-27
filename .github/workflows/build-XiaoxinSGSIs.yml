@@ -109,12 +109,12 @@ jobs:
            cd SGSI-build-tool/10
            sudo bash make.sh
            
-       - name: Zip Patch  
+       - name: 7Zip Patch  
          run: |
-           zip -r Patch1.zip Patch/Patch1/*
-           zip -r Patch2.zip Patch/Patch2/*
-           zip -r Patch3.zip Patch/Patch3/*
-           sudo mv Patch1.zip Patch2.zip Patch3.zip SGSI-build-tool/10/SGSI/
+           7za a -t7z -r Patch1.7z Patch/Patch1/*
+           7za a -t7z -r Patch2.7z Patch/Patch2/*
+           7za a -t7z -r Patch3.7z Patch/Patch3/*
+           sudo mv Patch1.7z Patch2.7z Patch3.7z SGSI-build-tool/10/SGSI/
            
        - name: 7zip SGSI
          run: |
