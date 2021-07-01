@@ -1,9 +1,9 @@
 {
-  "rom_url": "https://cdn-test-ota.blackshark.com/DLT-A0/20210507105110-darklighter-ota-signed_by_xiaomi_2bcb1105a058e6a258859cbf64cb86a1.zip",
-  "rom_name": "20210507105110-darklighter-ota-signed_by_xiaomi_2bcb1105a058e6a258859cbf64cb86a1.zip",
-  "pack_sgsi": "JOY_SGSI.7z",
+  "rom_url": "http://romdownload.nubia.com/%E7%BA%A2%E9%AD%943S/V5.14/NX629J-update.zip",
+  "rom_name": "NX629J-update.zip",
+  "pack_sgsi": "nubia_SGSI.zip",
   "make_miui": false,
-  "make_JOY": true,
+  "make_nubia": false,
   "make_flyme": false,
   "make_coloros": false,
   "make_h2os": false,
