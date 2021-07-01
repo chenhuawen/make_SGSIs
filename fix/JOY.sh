@@ -5,7 +5,7 @@ echo "
 支持的ROM:
 MIUI
 
-JOYUI
+nubai
 
 Flyme
 
@@ -19,7 +19,7 @@ ZUI
 --------------------
 "
 
- ./JOY.sh
+ ./nubai.sh
  echo "修复完成"
  cd ../
 © 2021 GitHub, Inc.
