@@ -70,12 +70,6 @@ jobs:
            sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
            mv fix/MIUI.sh SGSI-build-tool/10/fixbug/fixbug.sh
            
-       - name: Make JOY SGSI
-         if: steps.var.outputs.make_JOY == 'true'
-         run: |
-           sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
-           mv fix/JOY.sh SGSI-build-tool/10/fixbug/fixbug.sh    
-           
        - name: Make Flyme SGSI
          if: steps.var.outputs.make_flyme == 'true'
          run: |
@@ -106,18 +100,25 @@ jobs:
          run: |
            sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
            mv fix/ZUI.sh SGSI-build-tool/10/fixbug/fixbug.sh
-           
-       - name: 7Zip Patch  
+            
+       - name: Generate SGSI
          run: |
-           7za a -t7z -r Patch1.7z Patch/Patch1/*
-           7za a -t7z -r Patch2.7z Patch/Patch2/*
-           7za a -t7z -r Patch3.7z Patch/Patch3/*
-           sudo mv Patch1.7z Patch2.7z Patch3.7z SGSI-build-tool/10/SGSI/
+           rm -rf SGSI-build-tool/10/SGSI.sh SGSI-build-tool/10/makeimg.sh SGSI-build-tool/10/bin/mke2fs SGSI-build-tool/10/bin/e2fsdroid SGSI-build-tool/10/dynamic_SGSI.sh SGSI-build-tool/10/oppo.sh SGSI-build-tool/10/make.sh
+           mv make/makeimg.sh make/SGSI.sh make/dynamic_SGSI.sh make/oppo.sh make/make.sh SGSI-build-tool/10/
+           mv bin/mke2fs bin/e2fsdroid SGSI-build-tool/10/bin/
+           cd SGSI-build-tool/10
+           sudo bash make.sh
            
-       - name: 7zip SGSI
+       - name: Zip Patch  
+         run: |
+           zip -r Patch1.zip Patch/Patch1/*
+           zip -r Patch2.zip Patch/Patch2/*
+           zip -r Patch3.zip Patch/Patch3/*
+           sudo mv Patch1.zip Patch2.zip Patch3.zip SGSI-build-tool/10/SGSI/
+       - name: zip SGSI
          run: |
            mkdir -p upload
-           7za a -t7z -r ${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/10/SGSI/*
+           zip -r ${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/10/SGSI/*
            if [[ $(du -sb ${{ steps.var.outputs.pack_sgsi }} | awk '{print $1}') -gt 2097152000 ]];then
                  echo -e "split packaging..."
                  tar -cpzf - ${{ steps.var.outputs.pack_sgsi }} | split -d -b 1024m - upload/${{ steps.var.outputs.pack_sgsi }}
