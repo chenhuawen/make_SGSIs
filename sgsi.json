@@ -3,7 +3,7 @@
   "rom_name": "NX629J-update.zip",
   "pack_sgsi": "nubia_SGSI.zip",
   "make_miui": false,
-  "make_nubia": false,
+  "make_nubia": true,
   "make_flyme": false,
   "make_coloros": false,
   "make_h2os": false,
