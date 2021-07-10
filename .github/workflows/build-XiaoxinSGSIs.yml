@@ -84,7 +84,7 @@ jobs:
            mv fix/ColorOS.sh SGSI-build-tool/10/fixbug/fixbug.sh
            
        - name: Make JOY SGSI
-         if: steps.var.outputs.make_joy == 'true'
+         if: steps.var.outputs.make_JOY == 'true'
          run: |
            sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
            mv fix/H2OS.sh SGSI-build-tool/10/fixbug/fixbug.sh
