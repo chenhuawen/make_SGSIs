@@ -9,11 +9,11 @@ MIUI
 
 Flyme
 
-Nubia
+nubia
 
 Color
 
-JOYUI
+joy
 
 ZUI
 --------------------
