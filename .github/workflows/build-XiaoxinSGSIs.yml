@@ -84,13 +84,13 @@ jobs:
            mv fix/ColorOS.sh SGSI-build-tool/10/fixbug/fixbug.sh
            
        - name: Make JOY SGSI
-         if: steps.var.outputs.make_JOY == 'true'
+         if: steps.var.outputs.make_joy == 'true'
          run: |
            sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
            mv fix/H2OS.sh SGSI-build-tool/10/fixbug/fixbug.sh
            
        - name: Make Nubia SGSI
-         if: steps.var.outputs.make_Nubia == 'true'
+         if: steps.var.outputs.make_nubia == 'true'
          run: |
            sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
            mv fix/SmartisanOS.sh SGSI-build-tool/10/fixbug/fixbug.sh
@@ -119,7 +119,7 @@ jobs:
        - name: zip SGSI
          run: |
            mkdir -p upload
-           zip -r ${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/10/SGSI/*
+           7za a -t7z -r ${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/10/SGSI/*
            if [[ $(du -sb ${{ steps.var.outputs.pack_sgsi }} | awk '{print $1}') -gt 2097152000 ]];then
                  echo -e "split packaging..."
                  tar -cpzf - ${{ steps.var.outputs.pack_sgsi }} | split -d -b 1024m - upload/${{ steps.var.outputs.pack_sgsi }}
