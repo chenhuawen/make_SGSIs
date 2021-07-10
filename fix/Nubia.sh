@@ -9,16 +9,16 @@ MIUI
 
 Flyme
 
-Nubia
+nubia
 
 Color
 
-JOYUI
+joy
 
 ZUI
 --------------------
 "
 
- ./Nubia.sh
+ ./nubia.sh
  echo "修复完成"
  cd ../
