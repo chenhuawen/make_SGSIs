@@ -1,7 +1,7 @@
 {
   "rom_url": "http://romdownload.nubia.com/%E7%BA%A2%E9%AD%943S/V5.14/NX629J-update.zip",
   "rom_name": "NX629J-update.zip",
-  "pack_sgsi": "nubia_SGSI.7z",
+  "pack_sgsi": "nubia_SGSI.zip",
   "make_miui": false,
   "make_Nubia": true,
   "make_flyme": false,
