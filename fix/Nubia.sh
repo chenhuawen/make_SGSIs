@@ -19,6 +19,6 @@ ZUI
 --------------------
 "
 
- ./nubia.sh
+ ./Nubia.sh
  echo "修复完成"
  cd ../
