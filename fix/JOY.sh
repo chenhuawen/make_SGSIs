@@ -13,7 +13,7 @@ Nubia
 
 Color
 
-JOYUI
+JOY
 
 ZUI
 --------------------
