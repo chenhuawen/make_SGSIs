@@ -1,12 +1,14 @@
 {
-  "rom_url": "https://cdn-test-ota.blackshark.com/DLT-A0/20210507105110-darklighter-ota-signed_by_xiaomi_2bcb1105a058e6a258859cbf64cb86a1.zip",
-  "rom_name": "",
+  "rom_url": "https://download.c.realme.com/osupdate/RMX1991_11_OTA_1270_all_0TysfnWoknoq.ozip",
+  "rom_name": "RMX1991_11_OTA_1270_all_0TysfnWoknoq.ozip",
   "pack_sgsi": "XiaoxinSGSIs_Pinkdoge.7z",
-  "make_miui": true,
+  "make_miui": false,
   "make_flyme": false,
-  "make_coloros": false,
+  "make_coloros": true,
   "make_h2os": false,
   "make_smartisanos": false,
   "make_zui": false,
-  "make_super": false
+  "make_super": false,
+  "upload_transfer": true,
+  "upload_artifact": true
 }
