@@ -39,6 +39,8 @@ jobs:
            echo "::set-output name=make_smartisanos::$(jq -r '.make_smartisanos' sgsi.json)"
            echo "::set-output name=make_zui::$(jq -r '.make_zui' sgsi.json)"
            echo "::set-output name=make_super::$(jq -r '.make_super' sgsi.json)"
+           echo "::set-output name=upload_transfer::$(jq -r '.upload_transfer' sgsi.json)"
+           echo "::set-output name=upload_artifact::$(jq -r '.upload_artifact' sgsi.json)"
          id: var
            
        - name: Download XiaoxinSGSIs Tools
