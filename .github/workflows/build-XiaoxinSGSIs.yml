@@ -10,7 +10,7 @@ on:
     
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
@@ -46,7 +46,7 @@ jobs:
          uses: robinraju/release-downloader@v1
          with:
            repository: "xiaoxindada/SGSI-build-tool"
-           latest: "v1.9"
+           latest: true
            fileName: "SGSI-build-tool.tar"
            
        - name: Initialization environment
