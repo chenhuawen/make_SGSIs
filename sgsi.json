@@ -8,5 +8,5 @@
   "make_h2os": false,
   "make_smartisanos": false,
   "make_zui": false,
-  "make_super": true,
+  "make_super": false,
 }
