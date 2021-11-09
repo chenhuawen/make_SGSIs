@@ -1,7 +1,7 @@
 {
   "rom_url": "http://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD1981_A_1.12.0-update-full_1598237886.zip",
   "rom_name": "PD1981_A_1.12.0-update-full_1598237886.zip",
-  "pack_sgsi": "vivo.7z",
+  "pack_sgsi": "vivo.zip",
   "make_miui": false,
   "make_flyme": false,
   "make_coloros": true,
@@ -9,6 +9,4 @@
   "make_smartisanos": false,
   "make_zui": false,
   "make_super": true,
-  "upload_transfer": false,
-  "upload_artifact": true
 }
