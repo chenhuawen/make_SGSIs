@@ -4,7 +4,7 @@
   "pack_sgsi": "vivo.zip",
   "make_miui": false,
   "make_flyme": false,
-  "make_coloros": true,
+  "make_coloros": false,
   "make_h2os": false,
   "make_smartisanos": false,
   "make_zui": false,
