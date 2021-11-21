@@ -10,7 +10,7 @@ on:
     
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
@@ -25,6 +25,7 @@ jobs:
            sudo -E apt-get update
            sudo -E apt-get -y autoremove --purge
            sudo -E apt-get clean 
+           df -h
        
        - name: Get variables
          run: |
@@ -46,7 +47,7 @@ jobs:
          uses: robinraju/release-downloader@v1
          with:
            repository: "xiaoxindada/SGSI-build-tool"
-           latest: "v1.9"
+           tag: "v1.9"
            fileName: "SGSI-build-tool.tar"
            
        - name: Initialization environment
@@ -113,7 +114,7 @@ jobs:
        - name: Make Patch Module
          run: |
            zip -r Patchmod.zip SGSI-build-tool/10/out/vendor/app/* SGSI-build-tool/10/out/vendor/bin/* SGSI-build-tool/10/out/vendor/etc/* SGSI-build-tool/10/out/vendor/lib/* SGSI-build-tool/10/out/vendor/lib64/* SGSI-build-tool/10/out/vendor/overlay/*
-           sudo mv Patchmod.zip SGSI-build-tool/10/SGSI/
+           sudo mv Patchmod.zip SGSI-build-tool/10/SGSI/    
            
        - name: Zip Patch  
          run: |
@@ -123,8 +124,8 @@ jobs:
            sudo mv Patch1.zip Patch2.zip Patch3.zip SGSI-build-tool/10/SGSI/
            
        - name: 7z SGSI
-         run: 7za a -t7z -r ${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/10/SGSI/*
-
+         run: 7za a -t7z -r ${{ steps.var.outputs.pack_sgsi }} SGSI-build-tool/10/SGSI/*        
+           
        - name: Upload SGSI to WeTransfer
          if: steps.var.outputs.upload_transfer == 'true'
          run: |
