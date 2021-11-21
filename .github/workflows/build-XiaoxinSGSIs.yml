@@ -57,7 +57,7 @@ jobs:
            sudo bash setup.sh
            
        - name: Download Rom
-         run: sudo wget -c ${{ steps.var.outputs.rom_url }} -O SGSI-build-tool/10/tmp/${{ steps.var.outputs.rom_name }}
+         run: wget -c ${{ steps.var.outputs.rom_url }} -O SGSI-build-tool/10/tmp/${{ steps.var.outputs.rom_name }}
        
        - name: Build Super SGSI
          if: steps.var.outputs.make_super == 'true'
