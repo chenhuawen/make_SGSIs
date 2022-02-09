@@ -1,7 +1,7 @@
 {
-  "rom_url": "https://coloroswebsitefs.coloros.com/coloroswebsite-coloros-com/grs_20201028113724/PAAM00_11_OTA_2210_all_R9HZmKj9blSy.ozip",
-  "rom_name": "PAAM00_11_OTA_2210_all_R9HZmKj9blSy.ozip",
-  "pack_sgsi": "ColorOS.zip",
+  "rom_url": "https://download.c.realme.com/osupdate/RMX1991_11_OTA_1270_all_0TysfnWoknoq.ozip",
+  "rom_name": "RMX1991_11_OTA_1270_all_0TysfnWoknoq.ozip",
+  "pack_sgsi": "realme.zip",
   "make_miui": false,
   "make_flyme": false,
   "make_coloros": true,
