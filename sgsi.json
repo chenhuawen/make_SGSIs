@@ -1,7 +1,7 @@
 {
-  "rom_url": "https://download.c.realme.com/osupdate/RMX1991_11_OTA_1270_all_0TysfnWoknoq.ozip",
-  "rom_name": "RMX1991_11_OTA_1270_all_0TysfnWoknoq.ozip",
-  "pack_sgsi": "realme.zip",
+  "rom_url": "https://coloroswebsitefs.coloros.com/coloroswebsite-coloros-com/grs_20210512144856/PBCM10_11_OTA_2190_all_JENPrPCKvK93.ozip",
+  "rom_name": "PBCM10_11_OTA_2190_all_JENPrPCKvK93.ozip",
+  "pack_sgsi": "ColorOS.zip",
   "make_miui": false,
   "make_flyme": false,
   "make_coloros": true,
