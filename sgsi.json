@@ -1,12 +1,12 @@
 {
-  "rom_url": "https://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD1936_A_9.16.7-update-full_1643337342.zip",
-  "rom_name": "PD1936_A_9.16.7-update-full_1643337342.zip",
-  "pack_sgsi": "vivo.zip",
+  "rom_url": "https://www.coolapk.com/link?url=https%3A%2F%2Fdownload.meizu.com%2FFirmware%2FFlyme%2F16T%2F9.21.11.18%2Fcn_beta%2F20211117221418%2F8ae99162%2Fupdate.zip",
+  "rom_name": "update.zip",
+  "pack_sgsi": "Flyme.zip",
   "make_miui": false,
-  "make_flyme": false,
+  "make_flyme": true,
   "make_coloros": false,
   "make_h2os": false,
   "make_smartisanos": false,
   "make_zui": false,
-  "make_super": true
+  "make_super": false
 }
