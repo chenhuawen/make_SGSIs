@@ -1,11 +1,11 @@
 {
-  "rom_url": "https://download.meizu.com/Firmware/Flyme/16s_Pro/9.21.8.10/cn_beta/20210810002126/b7bb8831/update.zip",
-  "rom_name": "update.zip",
-  "pack_sgsi": "Flyme.zip",
+  "rom_url": "https://download.h2os.com/OnePlus6T/MP/OnePlus6THydrogen_34.K.61_OTA_0610_all_2109280613_c8da429bc7e74e24.zip",
+  "rom_name": "OnePlus6THydrogen_34.K.61_OTA_0610_all_2109280613_c8da429bc7e74e24.zip",
+  "pack_sgsi": "H2OS.zip",
   "make_miui": false,
-  "make_flyme": true,
+  "make_flyme": false,
   "make_coloros": false,
-  "make_h2os": false,
+  "make_h2os": true,
   "make_smartisanos": false,
   "make_zui": false,
   "make_super": false
